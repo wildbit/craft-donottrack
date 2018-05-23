@@ -66,7 +66,7 @@ class DoNotTrackPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/matt-west/donottrack/master/releases.json';
+        return 'https://raw.githubusercontent.com/wildbit/craft-donottrack/master/releases.json';
     }
 
     /**
@@ -99,7 +99,7 @@ class DoNotTrackPlugin extends BasePlugin
      */
     public function getDeveloper()
     {
-        return 'Matt West';
+        return 'Wildbit';
     }
 
     /**
@@ -109,7 +109,7 @@ class DoNotTrackPlugin extends BasePlugin
      */
     public function getDeveloperUrl()
     {
-        return 'https://mattwest.io';
+        return 'https://wildbit.com';
     }
 
     /**
@@ -120,37 +120,5 @@ class DoNotTrackPlugin extends BasePlugin
     public function hasCpSection()
     {
         return false;
-    }
-
-    /**
-     * Called right before your plugin’s row gets stored in the plugins database table, and tables have been created
-     * for it based on its records.
-     */
-    public function onBeforeInstall()
-    {
-    }
-
-    /**
-     * Called right after your plugin’s row has been stored in the plugins database table, and tables have been
-     * created for it based on its records.
-     */
-    public function onAfterInstall()
-    {
-    }
-
-    /**
-     * Called right before your plugin’s record-based tables have been deleted, and its row in the plugins table
-     * has been deleted.
-     */
-    public function onBeforeUninstall()
-    {
-    }
-
-    /**
-     * Called right after your plugin’s record-based tables have been deleted, and its row in the plugins table
-     * has been deleted.
-     */
-    public function onAfterUninstall()
-    {
     }
 }
